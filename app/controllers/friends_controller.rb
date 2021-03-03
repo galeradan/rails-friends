@@ -1,6 +1,7 @@
 class FriendsController < ApplicationController
   before_action :set_friend, only: %i[ show edit update destroy ]
   before_action :authenticate_user!
+  before_action :correct_user, only: [:edit, :update, :destroy]
 
   # GET /friends or /friends.json
   def index
@@ -18,6 +19,11 @@ class FriendsController < ApplicationController
 
   # GET /friends/1/edit
   def edit
+  end
+
+  def correct_user 
+    @friend = current_user.friends.find_by(id: params[:id])
+    redirect_to friends_path, notice: "You are not allowed to edit" if @friend.nil?
   end
 
   # POST /friends or /friends.json
