@@ -1,0 +1,26 @@
+.auth-form{
+    display: flex;
+    justify-content: center;
+    
+    .card{
+        width: 100%;
+        max-width: 480px;
+        padding: 1rem;
+
+        .form-group > *{
+            margin-bottom: 10px
+        }
+
+        .form-group >:last-child{
+            margin-bottom: 0;
+        }
+
+        .form-group{
+           margin-bottom: 30px
+        }
+
+        .actions{
+            margin-bottom: 30px;
+        }
+    }
+}

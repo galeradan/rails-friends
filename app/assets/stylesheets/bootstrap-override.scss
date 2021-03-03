@@ -1,0 +1,15 @@
+@import './variabless';
+
+.card{
+    border: none;
+    border-radius: 10px;
+    box-shadow: $shadow;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    margin: 0;
+}
