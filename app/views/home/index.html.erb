@@ -1,2 +1,16 @@
-<h1>Hello World</h1>
-<p>This is my first rails page</p>
+<h1>All friends</h1>
+<table class="table table-striped table-hover table-bordered">
+  <thead class="table-dark">
+    <tr>
+      <th>Name</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @friends.each do |friend| %>
+        <tr>
+          <td><%= friend.first_name + " " + friend.last_name %></td>
+        </tr>
+    <% end %>
+  </tbody>
+</table>
