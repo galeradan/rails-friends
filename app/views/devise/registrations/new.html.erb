@@ -11,6 +11,22 @@
                   autocomplete: "text",
                   class: "form-control"
                 }%>
+    <%= f.input :gender,
+                as: :select,
+                collection: [['Female', 'Female'], ['Male', 'Male'],['Prefer Not to Say', 'Prefer Not to Say']], label_method: :second, value_method: :first,
+                required: true,
+                autofocus: true,
+                input_html: { 
+                  autocomplete: "text",
+                  class: "form-control"
+                }%>
+     <%= f.input :mobile,
+                required: true,
+                autofocus: true,
+                input_html: { 
+                  type: "number",
+                  class: "form-control"
+                }%>
     <%= f.input :email,
                 required: true,
                 autofocus: true,
