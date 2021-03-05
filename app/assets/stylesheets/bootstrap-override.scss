@@ -1,5 +1,9 @@
 @import './variabless';
 
+
+abbr[data-bs-original-title], abbr[title] {
+    text-decoration: none;
+}
 .card{
     border: none;
     border-radius: 10px;
