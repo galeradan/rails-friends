@@ -23,6 +23,8 @@ gem 'jbuilder', '~> 2.7'
 gem 'devise', '~> 4.7', '>= 4.7.3'
 gem 'rails_admin', '~> 2.0'
 gem 'simple_form'
+gem 'country_select'
+
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
