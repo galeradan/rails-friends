@@ -20,6 +20,9 @@
       </ul>
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         <% if user_signed_in? %>
+           <li class="nav-item">
+              <%= link_to "Account", edit_user_registration_path, class:"nav-link"  %>
+            </li>
             <% if current_user.try(:admin?) %>
               <li class="nav-item">
                 <%= link_to "Admin", rails_admin_path, class:"nav-link"  %>
