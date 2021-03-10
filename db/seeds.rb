@@ -9,6 +9,7 @@ User.create(
     name: "Admin User",
     email: "admin@test.com",
     password: "admin123",
+    gender_id: 2,
     admin: true
 )
 
